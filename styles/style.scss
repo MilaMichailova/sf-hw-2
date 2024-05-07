@@ -4,6 +4,7 @@
 $default-gold-color: #e3b873;
 $default-white-color: #fff;
 $default-background-color: #131313;
+$default-focus-color: #c1c1c1;
 
 button {
   cursor: pointer;
@@ -272,7 +273,35 @@ ul {
   padding-bottom: 34px;
 }
 
+.navigation-block {
+  width: 132px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
 .naw-buttons-arrows {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-right: 18px;
+}
+
+.naw-buttons-pointers {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-right: 18px;
+}
+
+.pointer-navigation {
+  width: 9px;
+  height: 9px;
   border: none;
   background-color: transparent;
   outline: none;
@@ -440,6 +469,13 @@ ul {
   border: 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.user-info-input:focus {
+  outline: none;
+  border: 1px solid $default-focus-color;
+  border-radius: 5px;
 }
 
 .user-info-input::placeholder {
@@ -677,7 +713,14 @@ ul {
   border: 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   padding-bottom: 8px;
+  padding-top: 8px;
   background: $default-background-color;
+}
+
+.cta-sale-user-info-input:focus {
+  outline: none;
+  border: 1px solid $default-focus-color;
+  border-radius: 5px;
 }
 
 .cta-sale-user-info-input::placeholder {
@@ -985,7 +1028,13 @@ ul {
   border: 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   background: #181818;
-  padding: 0 58px 8px 0;
+  padding: 8px 58px 8px 5px;
+}
+
+.questions-user-info-input:focus {
+  outline: none;
+  border: 1px solid $default-focus-color;
+  border-radius: 5px;
 }
 
 .questions-user-info-input::placeholder {
@@ -1166,7 +1215,7 @@ ul {
     display: flex;
     flex-direction: column;
     width: 253px;
-    padding: 0 32px 0 32px;
+    padding: 0 32px 32px 32px;
   }
 
   .contrast-title {
@@ -1184,41 +1233,63 @@ ul {
     font-size: 11px;
     line-height: 158.48%;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     margin-left: -25px;
   }
 
-  .completed-projects-galery-mobile {
-    margin-left: -42px;
-    display: flex;
-    flex-direction: row;
-    width: 340px;
-    height: 241px;
-    justify-content: space-between;
-    vertical-align: middle;
-    background-image: url(/images/completed-projects-galery-mobile-img.svg);
+  .city {
+    text-align: center;
+    margin: 0 auto;
   }
 
-  .button-mobile-slider {
-    border: none;
-    background-color: transparent;
-    outline: none;
+  .completed-projects-gallery {
+    display: flex;
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  .completed-projects-menu-list {
+    display: none;
+  }
+
+  .completed-projects-menu-item {
+    padding: 0;
+  }
+
+  .img-wrapper {
+    width: 340px;
+    height: 241px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .image-slider {
+    width: 340px;
+    height: 241px;
   }
 
   .completed-projects-info {
     width: 341px;
     padding-top: 36px;
-    margin-left: -42px;
+    margin-left: -50px;
   }
 
   .completed-projects-item {
     width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .comleted-projects-item-title {
     font-size: 14px;
     line-height: 138.6%;
     padding-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .comleted-projects-item-subtitle {
@@ -1226,12 +1297,19 @@ ul {
     line-height: 135.84%;
     width: 99px;
     padding-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-block {
+    margin-left: 20px;
   }
 
   .online-control-subtitle {
     font-size: 22px;
     line-height: 138.6%;
-    padding-top: 0px;
+    padding-top: 5px;
   }
 
   .online-control-player {
