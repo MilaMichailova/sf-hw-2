@@ -54,66 +54,62 @@
                     our company is presented on the site. For 14 years on in the construction
                     market we have made happy more than 1000 families
                 </div>
-                <div class="mobile completed-projects-galery-mobile">
-                    <button class="button-mobile-slider">
-                        <img src="./images/button-mobile-slider-left.svg" alt="left-photo"></button>
-                    <button class="button-mobile-slider">
-                        <img src="./images/button-mobile-slider-right.svg" alt="right-photo"></button>
-                </div>
                 <div class="completed-projects-info">
                     <div class="completed-projects-item">
                         <div class="comleted-projects-item-title">City:</div>
-                        <div class="comleted-projects-item-subtitle">Rostov-on-Don
-                            LCD admiral</div>
+                        <div class="comleted-projects-item-subtitle city"></div>
                     </div>
                     <div class="completed-projects-item">
                         <div class="comleted-projects-item-title">apartment area:</div>
-                        <div class="comleted-projects-item-subtitle">81 m2</div>
+                        <div class="comleted-projects-item-subtitle apartment-area"></div>
                     </div>
                     <div class="completed-projects-item">
                         <div class="comleted-projects-item-title">Repair time:</div>
-                        <div class="comleted-projects-item-subtitle">3.5 months</div>
+                        <div class="comleted-projects-item-subtitle repair-time"></div>
                     </div>
                     <div class="completed-projects-item">
                         <div class="comleted-projects-item-title">Repair Cost:</div>
-                        <div class="comleted-projects-item-subtitle">Upon request</div>
+                        <div class="comleted-projects-item-subtitle repair-cost"></div>
                     </div>
                 </div>
-                <div class="desktop navigation-arrows">
-                    <button class="naw-buttons-arrows">
+                <div class="navigation-block">
+                    <button class="naw-buttons-arrows slider-prev">
                         <img src="./images/arrow_left_img.svg" alt="left-previous">
                     </button>
-                    <button class="naw-buttons-arrows">
-                        <img src="./images/nav_pointers_img.svg" alt="you-here">
-                    </button>
-                    <button class="naw-buttons-arrows">
+                    <div class="naw-buttons-pointers">
+                        <button class="pointer-navigation one-point">
+                            <img src="./images/pointer-dark-nav-img.svg" alt="you-here">
+                        </button>
+                        <button class="pointer-navigation two-point">
+                            <img src="./images/pointer-dark-nav-img.svg" alt="you-here">
+                        </button>
+                        <button class="pointer-navigation there-point">
+                            <img src=" ./images/pointer-dark-nav-img.svg" alt="you-here">
+                        </button>
+                    </div>
+                    <button class="naw-buttons-arrows slider-next">
                         <img src="./images/arrow_right_img.svg" alt="right-next">
                     </button>
                 </div>
             </div>
-            <div class="completed-projects-gallery desktop">
+            <div class="completed-projects-gallery">
                 <nav class="completed-projects-menu">
                     <ul class="completed-projects-menu-list">
-                        <li class="completed-projects-menu-item completed-projects-active-item">
-                            <a href="" class="completed-projects-active-item">Rostov-on-Don, Admiral</a>
+                        <li class="completed-projects-menu-item first-href">
+                            <a href="#rd-admiral" class="slider-link-0">Rostov-on-Don, Admiral</a>
                         </li>
-                        <li class="completed-projects-menu-item">
-                            <a href="">Sochi Thieves</a>
+                        <li class="completed-projects-menu-item second-href">
+                            <a href="#sochi" class="slider-link-1">Sochi Thieves</a>
                         </li>
-                        <li class="completed-projects-menu-item">
-                            <a href="">Rostov-on-Don Patriotic</a>
+                        <li class="completed-projects-menu-item there-href">
+                            <a href="#rd-patriotic" class="slider-link-2">Rostov-on-Don Patriotic</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="img-line-wrapper">
-                    <img src="./images/line_gold_img.svg">
-                </div>
-                <div class="img-wrapper">
-                    <img src="./images/galery_img.svg" alt="photo_project">
+                <div class="img-wrapper ">
+                    <img src="./images/galery_img1.svg" class="image-slider" alt="photo_Rostov-on-Don_Admiral">
                 </div>
             </div>
-
-
         </section>
         <section class="online-control ">
             <div class="online-control-dark">
@@ -499,6 +495,7 @@
         <button class="button-primary button-s button-footer">Request a call</button>
         </header>
     </footer>
+    <script defer src="/script.js"></script>
 </body>
 
 </html>
